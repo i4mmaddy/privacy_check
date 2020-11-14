@@ -32,19 +32,19 @@ if "_ga" in demo:
 # to get the geo location of the given ip -- 
 
 
-#reader = geoip2.database.Reader('/GeoLite2-City_20200804/GeoLite2-City.mmdb')
-#response = reader.city(ip)
-#print(response.country.iso_code)
+reader = geoip2.database.Reader('/GeoLite2-City_20200804/GeoLite2-City.mmdb')
+response = reader.city(ip)
+print(response.country.iso_code)
 
 
 #to get the ip from the given domain -- 
  
-#result = dns.resolver.resolve('tutorialspoint.com', 'A')
-#for ipval in result:
- #   ip = ipval.to_text()
+result = dns.resolver.resolve('tutorialspoint.com', 'A')
+for ipval in result:
+    ip = ipval.to_text()
 
 
  
-#result = dns.resolver.resolve('tutorialspoint.com', 'A')
-#for ipval in result:
- #   ip = ipval.to_text()
+result = dns.resolver.resolve('tutorialspoint.com', 'A')
+for ipval in result:
+    ip = ipval.to_text()
